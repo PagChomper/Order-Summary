@@ -1,0 +1,135 @@
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-pale-blue);
+  background-image: url(../pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.card {
+  max-width: 400px;
+  background-color: var(--very-pale-blue);
+  text-align: center;
+  margin: 2rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0px 30px -10px var(--desaturated-blue);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: var(--dark-blue);
+}
+
+.card p {
+  color: var(--desaturated-blue);
+  line-height: 2.8rem;
+  font-weight: 500;
+}
+.image {
+  width: 100%;
+}
+
+.content {
+  padding: 3rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--very-pale-blue);
+  padding: 2rem;
+  box-shadow: 0 0 10px 1px var(--very-pale-blue);
+  border-radius: 5px;
+  /*box-shadow: 0 10px 10px -10px #000000;*/
+}
+
+.plan h3 {
+  font-size: 1.6rem;
+  color: var(--dark-blue);
+  margin: 0;
+}
+
+.plan p {
+  color: var(--desaturated-blue);
+  margin: 0;
+}
+
+.plan img {
+  margin-right: 2rem;
+}
+
+.plan a {
+  margin-left: 4rem;
+  color: var(--primary-bright-blue);
+}
+
+.plan a:hover {
+  color: rgb(118, 108, 241);
+}
+
+.payment {
+  color: var(--very-pale-blue);
+  border: 0;
+  background: var(--primary-bright-blue);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 15px 25px -10px var(--desaturated-blue);
+  font-weight: 900;
+}
+
+.payment:hover {
+  background: rgb(118, 108, 241);
+}
+button {
+  padding: 1.6rem 5.4rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.cancel {
+  background: none;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+}
+
+.cancel:hover {
+  color: var(--dark-blue);
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    margin-top: 2rem;
+    padding: 1.6rem 8rem;
+  }
+
+  .container {
+    background-image: url(../pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+  }
+}
