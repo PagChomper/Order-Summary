@@ -31,8 +31,8 @@ a {
 
 .card {
   max-width: 400px;
-  background-color: var(--very-pale-blue);
   text-align: center;
+  background: #fff;
   margin: 2rem;
   border-radius: 2rem;
   overflow: hidden;
@@ -40,7 +40,7 @@ a {
 }
 
 .card h2 {
-  margin-top: 0;
+  margin-top: 1rem;
   color: var(--dark-blue);
 }
 
@@ -64,8 +64,7 @@ a {
   align-items: center;
   background: var(--very-pale-blue);
   padding: 2rem;
-  box-shadow: 0 0 10px 1px var(--very-pale-blue);
-  border-radius: 5px;
+  border-radius: 10px;
   /*box-shadow: 0 10px 10px -10px #000000;*/
 }
 
@@ -78,10 +77,6 @@ a {
 .plan p {
   color: var(--desaturated-blue);
   margin: 0;
-}
-
-.plan img {
-  margin-right: 2rem;
 }
 
 .plan a {
